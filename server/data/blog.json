@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": "demo-post-1",
+      "slug": "welcome-to-my-blog",
+      "title": "Welcome to my blog",
+      "content": "This is a demo post. Log in at /admin to write your own.\n\nDelete this post from the admin panel when you are ready.",
+      "excerpt": "This is a demo post. Log in at /admin to write your own.",
+      "published": true,
+      "createdAt": "2026-05-23T12:00:00.000Z",
+      "updatedAt": "2026-05-23T12:00:00.000Z"
+    }
+  ]
+}

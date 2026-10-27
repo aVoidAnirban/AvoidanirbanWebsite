@@ -1,0 +1,92 @@
+.timeline {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.timeline-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeline-tabs button {
+  text-align: left;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  color: var(--text);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.timeline-tabs button:hover {
+  background: var(--accent-soft);
+}
+
+.timeline-tabs button.active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.tab-year {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.tab-company {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.timeline-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2rem;
+  min-height: 200px;
+}
+
+.timeline-year {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-panel h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-company {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.timeline-desc {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  .timeline-tabs button {
+    flex-shrink: 0;
+    min-width: 140px;
+  }
+}
